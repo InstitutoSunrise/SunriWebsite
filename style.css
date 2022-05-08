@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.titulo{
+    color: #FFC700;
+    font-size: 45px;
+    font-family: 700;
+    text-align: center;
+}
+
+header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 25px 50px;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.500);
+}
+
+header .fa{
+    color: #FFC700;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+header .logo{
+    font-size: 30px;
+    color: #FFC700;
+}
+
+header .box{
+    display: flex;
+    align-items: center;
+}
+
+header .box ul{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+header .box ul li a{
+    font-size: 20px;
+    color: #FFC700;
+    margin: 10px;
+}
+
+header .box ul li a:hover{
+    color: #b99b2e;
+}
+
+nav{
+    background-color: #FFC700;
+    transform: translateX(100%);
+    right: 0;
+    top: 0;
+    position: fixed;
+    width: 35%;
+    height: 100%;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul{
+    text-align: center;
+    margin-top: 40px;
+}
+
+nav ul li{
+    margin-top: 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 30px;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+nav .bars{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 40px;
+}
+
+nav .bars .fa{
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+nav .box-menu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .box-social{
+    padding: 20px;
+}
+
+nav .box-social h2{
+    margin-top: 30px;
+    font-size: 30PX;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+}
+
+nav .box-social ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .box-social a{
+    font-size: 30px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+#check:checked ~ nav{
+    transform: translateX(0%);
+}
+
+input{
+    display: none;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.home img{
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    filter: brightness(0.5);
+}
+
+.home h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 400;
+    z-index: 1;
+    width: 100%;
+}
+
+.valores{
+    display: flex;
+    align-items: center;
+    padding: 100px 80px;
+    margin-top: -220px;
+}
+
+.valores .box-valores{
+    height: 250px;
+    margin: 20px;
+    background: #FFC700;
+    z-index: 998;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.valores .box-valores h1{
+    color: #fff;
+    text-align: center;
+    padding: 110px 0px 0px 0px;
+    transition: all 0.5s ease;
+}
+
+.valores .box-valores p{
+    color: #fff;
+    padding: 25px 10px 0px 10px;
+    text-align: center;
+    opacity: 0;
+}
+
+.valores .box-valores:hover h1{
+    padding-top: 30px;
+}
+
+.valores .box-valores:hover p{
+    opacity: 1;
+}
+
+.quemsomos{
+    padding: 50px 80px;
+    scroll-margin-top: 6.0rem;
+}
+
+.quemsomos .box{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    box-sizing: border-box;
+}
+
+.quemsomos .box .textsobre{
+    width: 50%;
+    height: 100%;
+    padding: 0px 15px;
+    background-color: rgba(229, 226, 226, 0.63);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quemsomos .box .textsobre h1{
+    color: #FFC700;
+    font-size: 45px;
+    padding-bottom: 30px;
+    text-align: left;
+    width: 100%;
+    font-weight: bold;
+}
+
+.quemsomos .box .textsobre p{
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.quemsomos .box .image{
+    width: 50%;
+    height: 100%;
+}
+
+.quemsomos .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.equipe{
+    padding: 50px 80px;
+    scroll-margin-top: 6.0rem;
+}
+
+.equipe .box{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.equipe .card{
+    flex: 1 1;
+    position: relative;
+}
+
+.equipe .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.equipe .card .box-info{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    background: linear-gradient(transparent,#000);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    opacity: 0;
+    transition: all 0.5s ease;
+
+}
+
+.equipe .card:hover .box-info{
+    opacity: 1;
+}
+
+.equipe .card .box-info h3{
+    font-size: 20px;
+}
+
+.equipe .card .box-info p{
+    font-size: 15px;
+}
+
+.projeto{
+    padding: 50px 80px;
+    scroll-margin-top: 6.0rem;
+}
+
+.projeto .box{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+}
+
+.projeto .box .text{
+    width: 50%;
+    height: 100%;
+    padding: 0px 15px;
+    background-color: rgba(229, 226, 226, 0.63);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projeto .box .text h1{
+    color: #FFC700;
+    font-size: 45px;
+    padding-bottom: 30px;
+    text-align: left;
+    width: 100%;
+    font-weight: bold;
+}
+
+.projeto .box .text p{
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.projeto .box .text button{
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #FFC700;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.projeto .box .text button a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s ease;
+    font-size: 20px;
+}
+
+.projeto .box .text button:hover a{
+    letter-spacing: 2px;
+}
+
+.projeto .box .image{
+    width: 50%;
+    height: 100%;
+}
+
+.projeto .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contate{
+    padding: 50px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-margin-top: 6.0rem;
+}
+
+.contate h1{
+    margin-bottom: 50px;
+}
+
+.contate .box_form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contate .box_form div{
+    display: flex;
+    margin: 0px 0px 25px;
+}
+
+.contate .box_form .first{
+    margin-right: 20px;
+}
+
+textarea{
+    width: 100%;
+    height: 250px;
+    font-size: 20px;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid #000;
+}
+
+.contate .box_form div input{
+    display: block;
+    width: 450px;
+    height: 40px;
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid #000;
+}
+
+.contate .box_form button{
+    width: 150px;
+    height: 45px;
+    padding: 10px 15px;
+    background: #FFC700;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+footer{
+    width: 100%;
+    height:auto;
+    background: #FFC700;
+    color: #fff;
+    padding-top: 40px;
+    margin-top: 50px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 30px;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    font-size: 20px;
+    margin: 5px;
+}
+
+.footer-content a{
+    color: #fff;
+}
+
+.footer-content ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.footer-content ul li{
+    margin: 0px 10px;
+}
+
+.footer-content ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+
+}
+
+.footer-content ul li a i{
+    transition: 0.5s ease;
+}
+
+.footer-content ul li a:hover i{
+    transform: translateY(-5px) ;
+}
+
+.footer-botom{
+    background: #FFA800;
+    width: 100%;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.footer-botom p{
+    font-size: 16px;
+}
+
+.footer-botom span{
+    color: rgb(48, 45, 45);
+}
+
+@media (max-width:700px){
+    
+    header{
+        padding: 20px 30px;
+    }
+
+    header .box ul{
+        display: none;
+    }
+
+    nav{
+        width: 50%;
+    }
+
+    nav ul li a{
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .home h3{
+        font-size: 30px;
+        padding: 15px;
+    }
+
+    .valores{
+        flex-direction: column;
+    }
+
+    .valores .box-valores{
+        margin: 20px 0px;
+    }
+
+    .valores .box-valores h1{
+        padding-top: 30px;
+    }
+
+    .valores .box-valores p{
+        opacity: 1;
+    }
+
+    .quemsomos{
+        padding: 50px 20px;
+    }
+
+    .quemsomos .box{
+        flex-direction: column-reverse;
+        height: 1200px
+    }
+
+    .quemsomos .box .textsobre{
+        width: 100%;
+        height: 50%;
+    }
+
+    .quemsomos .box .image{
+        width: 100%;
+        height: 50%;
+    }
+
+    .quemsomos .box .image img{
+        width: 100%;
+    }
+
+    .equipe{
+        padding: 50px 20px;
+    }
+
+    .equipe .box{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .equipe .box .card .box-info{
+        opacity: 1;
+    }
+
+    .projeto{
+        padding: 50px 20px;
+    }
+
+    .projeto .box{
+        flex-direction: column-reverse;
+        height: 1200px
+    }
+
+    .projeto .box .text{
+        width: 100%;
+        height: 50%;
+    }
+
+    .projeto .box .image{
+        width: 100%;
+        height: 50%;
+    }
+
+    .projeto .box .image img{
+        width: 100%;
+    }
+
+    .contate{
+        padding: 50px 20px;
+    }
+
+    .contate .box_form div{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .contate .box_form div input{
+        margin-bottom: 25px;
+        width: 285px;
+    }
+
+    .contate .box_form textarea{
+        width: 285px;
+    }
+
+    
+}
+
+@media (max-width:500px){
+    .equipe .box{
+        grid-template-columns: repeat(1,1fr);
+    }   
+}
