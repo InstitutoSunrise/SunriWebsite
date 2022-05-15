@@ -19,11 +19,25 @@ body{
     overflow-x: hidden;
 }
 
+.box-top-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-top-section .linha{
+    height: 3px;
+    width: 35%;
+    background-color: #FFC700;
+}
+
 .titulo{
     color: #FFC700;
     font-size: 45px;
     font-family: 700;
     text-align: center;
+    margin: 0px 20px 0px 20px;
 }
 
 header{
@@ -87,7 +101,6 @@ nav{
 
 nav ul{
     text-align: center;
-    margin-top: 40px;
 }
 
 nav ul li{
@@ -189,6 +202,7 @@ input{
 }
 
 .valores .box-valores{
+    width: 300px;
     height: 250px;
     margin: 20px;
     background: #FFC700;
@@ -206,13 +220,13 @@ input{
 
 .valores .box-valores p{
     color: #fff;
-    padding: 25px 10px 0px 10px;
+    padding: 10px 10px 0px 10px;
     text-align: center;
     opacity: 0;
 }
 
 .valores .box-valores:hover h1{
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .valores .box-valores:hover p{
@@ -227,7 +241,7 @@ input{
 .quemsomos .box{
     display: flex;
     width: 100%;
-    height: 600px;
+    height: 550px;
     box-sizing: border-box;
 }
 
@@ -326,7 +340,7 @@ input{
 .projeto .box{
     display: flex;
     width: 100%;
-    height: 600px;
+    height: 550px;
     margin-top: 50px;
 }
 
@@ -392,11 +406,8 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-margin-top: 6.0rem;
-}
-
-.contate h1{
-    margin-bottom: 50px;
+    flex-direction: column;
+    scroll-margin-top: 5.0rem;
 }
 
 .contate .box_form{
@@ -404,6 +415,7 @@ input{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 50px;
 }
 
 .contate .box_form div{
